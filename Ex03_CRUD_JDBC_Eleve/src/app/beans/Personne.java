@@ -20,6 +20,7 @@ public class Personne {
   private boolean actif;
   private double salaire;
   private Date dateModif;
+  
 
   public Personne( int pkPers, String nom, String prenom, Date dateNaissance,
           int noRue, String rue, int npa, String localite, boolean actif,

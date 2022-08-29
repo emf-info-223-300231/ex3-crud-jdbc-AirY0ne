@@ -15,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import java.io.File;
 import app.workers.DbWorkerItf;
+import app.workers.PersonneManager;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
@@ -35,7 +36,7 @@ public class MainCtrl implements Initializable {
 
   private DbWorkerItf dbWrk;
   private boolean modeAjout;
-
+  private PersonneManager manPers;
   @FXML
   private TextField txtNom;
   @FXML
