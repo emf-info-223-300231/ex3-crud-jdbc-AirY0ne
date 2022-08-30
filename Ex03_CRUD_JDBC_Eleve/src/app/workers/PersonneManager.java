@@ -19,22 +19,22 @@ public class PersonneManager {
     public PersonneManager() {
     }
     public Personne courantPersonne(){
-        
+        return null;
     }
     
     public Personne debutPersonne(){
-        
+        return null;
     }
     
     public Personne finPersonne(){
-        
+        return null;
     }
     
     public Personne precedentPersonne(){
-        
+        return null;
     }
     public Personne suivantPersonne(){
-        
+        return null;
     }
 
     public void setPersonnes(List<Personne> listePersonnes) {
