@@ -12,36 +12,48 @@ import java.util.List;
  * @author kabashie
  */
 public class PersonneManager {
-    private int index=0;
+
+    private int index = 0;
     private List<Personne> listePersonnes;
-    
 
     public PersonneManager() {
     }
-    public Personne courantPersonne(){
-        return null;
-    }
-    
-    public Personne debutPersonne(){
-        return null;
-    }
-    
-    public Personne finPersonne(){
-        return null;
-    }
-    
-    public Personne precedentPersonne(){
-        return null;
-    }
-    public Personne suivantPersonne(){
-        return null;
+
+    public Personne courantPersonne() {
+        return listePersonnes.get(index);
     }
 
-    public void setPersonnes(List<Personne> listePersonnes) {
-        this.listePersonnes = listePersonnes;
+    public Personne debutPersonne() {
+        this.index = 0;
+        return listePersonnes.get(index);
     }
-    
-    
-    
-    
+
+    public Personne finPersonne() {
+        this.index = listePersonnes.size() - 1;
+        return listePersonnes.get(index);
+    }
+
+    public Personne precedentPersonne() {
+        if (index > 0) {
+            this.index--;
+        }
+
+        return listePersonnes.get(index);
+    }
+
+    public Personne suivantPersonne() {
+        if (index < listePersonnes.size() - 1) {
+            this.index++;
+        }
+
+        return listePersonnes.get(index);
+    }
+
+    public Personne setPersonnes(List<Personne> listePersonnes) {
+
+        this.listePersonnes = listePersonnes;
+
+        return listePersonnes.get(index);
+    }
+
 }
